@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="SewarDal.MapPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="SettingsBtn" Text="Settings" Clicked="ToolbarItem_SettingsClicked" />
+    </ContentPage.ToolbarItems>
+    <AbsoluteLayout>
+        <maps:Map AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+                  MyLocationEnabled="True" x:Name="MainMap" IsShowingUser="True"/>
+
+        <Image AbsoluteLayout.LayoutBounds="1,1" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="PositionProportional" x:Name="whiteBarBottom" />
+        <Image AbsoluteLayout.LayoutBounds="0.5,0.9,100,100" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="PositionProportional" x:Name="LocateMeButton">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="TapGestureRecognizer_Tapped" />
+            </Image.GestureRecognizers>
+        </Image>
+    </AbsoluteLayout>
+</ContentPage>

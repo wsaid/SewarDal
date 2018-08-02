@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SewarDal"
+             x:Class="SewarDal.MainPage">
+
+    <AbsoluteLayout>
+        <!--<Image x:Name="SplashBG" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill" />-->
+        <Image x:Name="mainLogo" AbsoluteLayout.LayoutBounds="0.5,0.5,200,200" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <ActivityIndicator IsRunning="True" AbsoluteLayout.LayoutBounds="0.5,0.7" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        
+    </AbsoluteLayout>
+</ContentPage>
