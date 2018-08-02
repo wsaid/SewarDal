@@ -107,10 +107,7 @@ int main()
 	evt_le_meta_event * meta_event;
 	le_advertising_info * info;
 	int len;
-	double yellow=-60;
-	double pink=-60;
 
-	double purple=-60;
 	while ( 1 ) {
 		len = read(device, buf, sizeof(buf));
 		if ( len >= HCI_EVENT_HDR_SIZE ) {
