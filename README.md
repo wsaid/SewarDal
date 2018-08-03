@@ -1,3 +1,5 @@
+# SEWAR DAL
+
 Inspiration:
 The team was inspired to build Sewar Dal (Dal bracelet) after volunteering as boy scout in Makkah helping pilgrimages to reach their designated area when individual gets lost. Many pilgrimages don't know how to reach their desire location due to massive population and difficulty to identify the right tents.
 
