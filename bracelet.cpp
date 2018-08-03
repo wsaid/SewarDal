@@ -18,6 +18,55 @@ void startScreen();
 void cleanUp();
 void measure(int room, char** beacons);
 
+void cancel_screen(char *c)
+{
+	oled.clear(PAGE);
+	oled.setCursor(10,24);
+	oled.print(c);
+	oled.display();
+}
+
+void main_menu(int cnt)
+{
+	oled.clear(PAGE);
+	oled.setCursor(0,0);
+	oled.print("Go to:");
+	oled.setCursor(20,10);
+	oled.print("Tent A");
+	oled.setCursor(20,20);
+	oled.print("Tent B");
+	oled.setCursor(20,30);
+	oled.print("Tent C");
+	oled.setCursor(20,40);
+	oled.print("Qibla");
+	
+	switch(cnt)
+	{
+		case 0:
+			oled.line(19,12,14,9);
+			oled.line(19,12,14,15);
+			oled.display();
+			break;
+		
+		case 1:
+			oled.line(19,22,14,19);
+			oled.line(19,22,14,25);
+			oled.display();
+			break;
+		case 2: 
+			oled.line(19,32,14,29);
+			oled.line(19,32,14,35);
+			oled.display();
+			break;
+		case 3:
+			oled.line(19,42,14,39);
+			oled.line(19,42,14,45);
+			oled.display();
+	}
+		
+}
+
+
 int main(int argc, char * argv[])
 {
 	initOLED();
@@ -213,3 +262,4 @@ void measure(int room, char** beacons)
 	limit=10;
 	
 }
+
