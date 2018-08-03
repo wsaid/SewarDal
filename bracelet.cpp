@@ -16,7 +16,7 @@ using namespace std;
 void initOLED();
 void startScreen();
 void cleanUp();
-void measure();
+void measure(int room, char** beacons);
 
 int main(int argc, char * argv[])
 {
